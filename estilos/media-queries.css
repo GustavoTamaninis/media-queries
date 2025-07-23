@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    span#burger{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+    main{
+        width: 700px;
+    }
+    span#burger{
+        display: none;
+    }
+    nav{
+        display: block !important;
+    }
+    nav > ul > li{
+        display: inline-block;
+        width: 10vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        width: 800px;
+    }
+    span#burger{
+        display: none;
+    }
+    nav{
+        display: block !important;
+    }
+    nav > ul > li{
+        display: inline-block;
+        width: 10vw;
+    }
+}
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    article::after{
+        content: 'Esse artigo foi impresso através do Site de Exemplo.';
+    }
+    span#burger{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+
+}
